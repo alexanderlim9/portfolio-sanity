@@ -8,13 +8,17 @@
 
 .wrapper {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0 0;
   max-width: 960px;
   padding: 1em;
   display: flex;
 
   @media (--media-min-small) {
     padding: 1.5em 1.5em;
+  }
+
+  @media (--media-min-medium) {
+    margin-left: 5%;
   }
 }
 

@@ -4,9 +4,13 @@
   box-sizing: border-box;
   max-width: 960px;
   padding: 1.5em;
-  margin: 0 auto;
+  margin: 0;
 
   @media (--media-min-small) {
     padding: 2em;
+  }
+
+  @media (--media-min-medium) {
+    margin-left: 5%;
   }
 }
