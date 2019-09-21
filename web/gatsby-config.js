@@ -19,6 +19,14 @@ module.exports = {
         watchMode: !isProd,
         overlayDrafts: !isProd
       }
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        typekit: {
+          id: 'mhi1xgd'
+        }
+      }
     }
   ]
 }

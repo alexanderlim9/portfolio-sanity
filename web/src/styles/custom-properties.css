@@ -1,4 +1,5 @@
 :root {
+  --font-family-serif: 'ff-tisa-web-pro', BlinkMacSystemFont, serif;
   --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif;
 
   --color-black: #202123;
@@ -26,4 +27,8 @@
   --font-title2-line-height: calc(33 / 24); /* 33px */
   --font-title1-size: calc(49 / var(--unit) * 1rem); /* 49px */
   --font-title1-line-height: calc(57 / 49); /* 57px */
+}
+
+.home-hero1 {
+  font-weight: 400;
 }
