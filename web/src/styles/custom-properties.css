@@ -2,7 +2,7 @@
   --font-family-serif: 'ff-tisa-web-pro', BlinkMacSystemFont, serif;
   --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif;
 
-  --color-black: #202123;
+  --color-black: #222222;
   --color-dark-gray: #32373e;
   --color-gray: #697a90;
   --color-light-gray: #b4bcc7;
@@ -11,12 +11,12 @@
   --color-accent: #156dff;
 
   /* Typography */
-  --unit: 16;
+  --unit: 18;
   --font-micro-size: calc(10 / var(--unit) * 1rem); /* 10px */
   --font-micro-line-height: calc(12 / 10); /* 12px */
   --font-small-size: calc(14 / var(--unit) * 1rem); /* 14px */
   --font-small-line-height: calc(21 / 14); /* 21px */
-  --font-base-size: 1em; /* 16px */
+  --font-base-size: 18px; /* 16px - edited */
   --font-base-line-height: calc(24 / var(--unit)); /* 24px */
   --font-large-size: calc(18 / var(--unit) * 1rem); /* 18px */
   --font-large-line-height: calc(27 / 18); /* 27px */
@@ -29,6 +29,46 @@
   --font-title1-line-height: calc(57 / 49); /* 57px */
 }
 
+/* HOME PAGE ----------------*/
 .home-hero1 {
   font-weight: 400;
+  font-size: 2.5em;
+  line-height: 1.2em;
+}
+
+.home-hero2 {
+  font-weight: 400;
+  font-size: 1.35em;
+  line-height: 1.35em;
+  max-width: 750px;
+  margin: 35px 0px;
+}
+
+/* LINKS ----------------*/
+a {
+  color: var(--color-black);
+}
+
+a:visited {
+  color: var(--color-black);
+}
+
+/* CONTACT ----------------*/
+.contact ul {
+  padding: 0;
+}
+.contact li {
+    display: inline;
+}
+
+.contact a:before {
+    content: none;
+}
+
+.contact li:after {
+    content: ' / '
+}
+
+.contact li:last-child:after {
+    content: '';
 }
