@@ -156,13 +156,15 @@ const IndexPage = props => {
             </ul>
           </div>
         </div>
-        {postNodes && (
-          <BlogPostPreviewList
-            title='Latest blog posts'
-            nodes={postNodes}
-            browseMoreHref='/archive/'
-          />
-        )}
+        <div className="projects">
+          {postNodes && (
+            <BlogPostPreviewList
+              title='Featured Projects'
+              nodes={postNodes}
+              browseMoreHref='/archive/'
+            />
+          )}
+        </div>
       </Container>
     </Layout>
   )

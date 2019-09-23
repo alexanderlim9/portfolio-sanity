@@ -72,3 +72,8 @@ a:visited {
 .contact li:last-child:after {
     content: '';
 }
+
+/* PROJECTS ----------------*/
+.projects {
+  margin: 100px 0px;
+}
