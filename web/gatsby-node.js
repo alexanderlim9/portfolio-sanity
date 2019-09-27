@@ -36,7 +36,7 @@ async function createBlogPostPages (graphql, actions, reporter) {
     .forEach((edge, index) => {
       const {id, slug = {}, publishedAt} = edge.node
       const dateSegment = format(publishedAt, 'YYYY/MM')
-      const path = `/blog/${dateSegment}/${slug.current}/`
+      const path = `/projects/${slug.current}/`
 
       reporter.info(`Creating blog post page: ${path}`)
 
