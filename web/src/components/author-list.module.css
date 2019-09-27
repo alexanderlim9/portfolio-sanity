@@ -32,8 +32,8 @@
 
 .avatar {
   position: relative;
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
   background: var(--color-very-light-gray);
   border-radius: 50%;
   overflow: hidden;
