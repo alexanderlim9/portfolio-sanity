@@ -1,9 +1,9 @@
 import {format} from 'date-fns'
-import {Link} from 'gatsby'
 import React from 'react'
 import {buildImageObj, cn, getBlogUrl} from '../lib/helpers'
 import {imageUrlFor} from '../lib/image-url'
 import PortableText from './portableText'
+import Link from './variable-link'
 
 import styles from './blog-post-preview.module.css'
 import {responsiveTitle3} from './typography.module.css'
@@ -12,7 +12,7 @@ function BlogPostPreview (props) {
   return (
     <Link
       className={props.isInList ? styles.inList : styles.inGrid}
-      to={getBlogUrl(props.publishedAt, props.slug.current)}
+      to={getBlogUrl(props.externalLink, props.slug.current)}
     >
       <div className={styles.leadMediaThumb}>
         {props.mainImage && props.mainImage.asset && (

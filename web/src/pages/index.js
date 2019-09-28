@@ -58,6 +58,7 @@ export const query = graphql`
           slug {
             current
           }
+          externalLink
         }
       }
     }
