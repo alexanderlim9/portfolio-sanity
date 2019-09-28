@@ -10,7 +10,7 @@
   box-sizing: border-box;
   margin: 0 0;
   max-width: 960px;
-  padding: 1em;
+  padding: .5em;
   display: flex;
 
   @media (--media-min-small) {

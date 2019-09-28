@@ -3,7 +3,7 @@
 .root {
   box-sizing: border-box;
   max-width: 960px;
-  padding: 1.5em;
+  padding: 1em;
   margin: 0;
 
   @media (--media-min-small) {
