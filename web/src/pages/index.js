@@ -162,7 +162,7 @@ const IndexPage = props => {
             <BlogPostPreviewList
               title='Featured Projects'
               nodes={postNodes}
-              browseMoreHref='/archive/'
+              browseMoreHref='/projects/'
             />
           )}
         </div>
