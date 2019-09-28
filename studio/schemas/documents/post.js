@@ -22,6 +22,12 @@ export default {
       }
     },
     {
+      name: 'externalLink',
+      type: 'url',
+      title: 'External Link',
+      description: 'This project will link to the live site'
+    },
+    {
       name: 'publishedAt',
       type: 'datetime',
       title: 'Published at',
@@ -103,15 +109,17 @@ export default {
       title: 'title',
       publishedAt: 'publishedAt',
       slug: 'slug',
+      externalLink: 'externalLink',
       media: 'mainImage'
     },
-    prepare ({title = 'No title', publishedAt, slug = {}, media}) {
+    prepare ({title = 'No title', publishedAt, slug = {}, media, externalLink}) {
       const dateSegment = format(publishedAt, 'YYYY/MM')
       const path = `/${dateSegment}/${slug.current}/`
       return {
         title,
         media,
-        subtitle: publishedAt ? path : 'Missing publishing date'
+        subtitle: publishedAt ? path : 'Missing publishing date',
+        externalLink
       }
     }
   }
