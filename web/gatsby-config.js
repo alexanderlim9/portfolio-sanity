@@ -27,6 +27,12 @@ module.exports = {
           id: 'mhi1xgd'
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/icon.png`,
+      },
+    },
   ]
 }
