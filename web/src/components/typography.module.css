@@ -136,3 +136,26 @@
     line-height: var(--font-large-line-height);
   }
 }
+
+.home_hero1 {
+  font-weight: 400;
+  font-size: 1.6em;
+  line-height: 1.1em;
+
+  @media (--media-min-small) {
+    font-size: 2.5em;
+    line-height: 1.2em;
+  }
+}
+
+.home_hero2 {
+  font-weight: 400;
+  font-size: 1em;
+  max-width: 750px;
+  margin: 35px 0px;
+
+  @media (--media-min-small) {
+    font-size: 1.35em;
+    line-height: 1.35em;
+  }
+}

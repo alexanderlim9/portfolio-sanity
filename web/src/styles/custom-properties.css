@@ -29,21 +29,6 @@
   --font-title1-line-height: calc(57 / 49); /* 57px */
 }
 
-/* HOME PAGE ----------------*/
-.home_hero1 {
-  font-weight: 400;
-  font-size: 2.5em;
-  line-height: 1.2em;
-}
-
-.home_hero2 {
-  font-weight: 400;
-  font-size: 1.35em;
-  line-height: 1.35em;
-  max-width: 750px;
-  margin: 35px 0px;
-}
-
 /* LINKS ----------------*/
 a {
   color: var(--color-black);

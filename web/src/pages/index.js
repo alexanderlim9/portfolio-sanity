@@ -11,6 +11,8 @@ import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 
+import {home_hero1, home_hero2} from '../components/typography.module.css'
+
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
     crop {
@@ -98,8 +100,8 @@ const IndexPage = props => {
       />
       <Container>
         <div className='hero'>
-          <h1 className='home_hero1'><b>I'm Alex.</b> I'm a creative developer, designer, and journalist telling stories through data and the web.</h1>
-          <p className="home_hero2">
+          <h1 className={home_hero1}><b>I'm Alex.</b> I'm a creative developer, designer, and journalist telling stories through data and the web.</h1>
+          <p className={home_hero2}>
             I just wrapped up an apprenticeship at{" "}
             <a href="https://www.upstatement.com/" target="_blank">
               Upstatement
@@ -118,7 +120,7 @@ const IndexPage = props => {
             </a>
             . I'm a senior at Northeastern University graduating in May 2020.
           </p>
-          <p className="home_hero2">
+          <p className={home_hero2}>
             <b>I'm looking for a job!</b> Will you hire me?
           </p>
           <div className="contact">
