@@ -64,8 +64,9 @@
   }
 }
 
-.date {
+.previewType {
   font-size: var(--font-small-size);
+  font-variant: small-caps;
   line-height: var(--font-small-line-height);
   color: var(--color-gray);
 }

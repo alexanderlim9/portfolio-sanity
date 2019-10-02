@@ -46,3 +46,11 @@ export function toPlainText (blocks) {
     })
     .join('\n\n')
 }
+
+export function previewType (externalLink) {
+  if (externalLink == null) {
+    return 'Case Study'
+  } else {
+    return 'Live Site'
+  }
+}

@@ -1,6 +1,6 @@
-import {format} from 'date-fns'
+// import {format} from 'date-fns'
 import React from 'react'
-import {buildImageObj, cn, getBlogUrl} from '../lib/helpers'
+import {buildImageObj, cn, getBlogUrl, previewType} from '../lib/helpers'
 import {imageUrlFor} from '../lib/image-url'
 import PortableText from './portableText'
 import Link from './variable-link'
@@ -33,7 +33,7 @@ function BlogPostPreview (props) {
             <PortableText blocks={props._rawExcerpt} />
           </div>
         )}
-        <div className={styles.date}>{format(props.publishedAt, 'MMMM Do, YYYY')}</div>
+        <div className={styles.previewType}>{previewType(props.externalLink)}</div>
       </div>
     </Link>
   )
