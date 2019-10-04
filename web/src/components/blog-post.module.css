@@ -85,6 +85,7 @@
 
   @nest & ul li {
     padding: 0.12rem 0;
+    font-size: var(--font-small-size);
   }
 }
 
