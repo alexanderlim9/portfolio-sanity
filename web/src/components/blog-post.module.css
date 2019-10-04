@@ -53,6 +53,11 @@
     margin: 40px 0px;
     padding: 0;
 
+    @nest & figcaption {
+      color: gray;
+      font-size: var(--font-small-size);
+    }
+
     @nest & img {
       max-width: 100%;
     }
