@@ -100,25 +100,24 @@ const IndexPage = props => {
       />
       <Container>
         <div className='hero'>
-          <h1 className={home_hero1}><b>I'm Alex.</b> I'm a creative developer, designer, and journalist telling stories through data and the web.</h1>
+          <h1 className={home_hero1}><b>I'm Alex.</b> I'm a creative developer, designer, and journalist visualizing data and building narratives on the web.</h1>
           <p className={home_hero2}>
-            I just wrapped up an apprenticeship at{" "}
+            You can find me exploring social media data this semester with the new{" "}
+            <a href="https://camd.northeastern.edu/research-scholarship-creative-practice/co-laboratory-for-data-impact/" target="_blank">
+              Co-Lab for Data Impact
+            </a>
+            . Previous homes include{" "}
             <a href="https://www.upstatement.com/" target="_blank">
               Upstatement
-            </a>{" "}
-            where I focused on data visualization. Before that, I’ve freelanced at{" "}
+            </a>,{" "}
             <a href="https://www.bostonglobe.com/" target="_blank">
               The Boston Globe
             </a>{" "}
-            and have worked at{" "}
+            and {" "}
             <a href="https://www.twosixlabs.com/" target="_blank">
               Two Six Labs
-            </a>{" "}
-            and{" "}
-            <a href="https://web.northeastern.edu/scout/" target="_blank">
-              Scout Studio
-            </a>
-            . I'm a senior at Northeastern University graduating in May 2020.
+            </a>.{" "}
+            I'm a senior at Northeastern University graduating in May 2020.
           </p>
           <p className={home_hero2}>
             <b>I'm looking for a job!</b> Will you hire me?
