@@ -22,10 +22,16 @@ export default {
       }
     },
     {
+      name: 'disableCaseStudy',
+      type: 'boolean',
+      title: 'Disable Case Study',
+      description: 'This project will link to the live site directly from the preview'
+    },
+    {
       name: 'externalLink',
       type: 'url',
       title: 'External Link',
-      description: 'This project will link to the live site'
+      description: 'Link to the live site'
     },
     {
       name: 'publishedAt',

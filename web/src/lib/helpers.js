@@ -17,8 +17,8 @@ export function filterOutDocsPublishedInTheFuture ({publishedAt}) {
   return !isFuture(publishedAt)
 }
 
-export function getBlogUrl (externalLink, slug) {
-  if (externalLink != null) {
+export function getBlogUrl (disableCaseStudy, externalLink, slug) {
+  if (disableCaseStudy == true) {
     return externalLink
   } else {
     return `/projects/${slug.current || slug}/`
@@ -47,10 +47,10 @@ export function toPlainText (blocks) {
     .join('\n\n')
 }
 
-export function previewType (externalLink) {
-  if (externalLink == null) {
-    return 'Case Study'
-  } else {
+export function previewType (disableCaseStudy) {
+  if (disableCaseStudy == true) {
     return 'Live Site'
+  } else {
+    return 'Case Study'
   }
 }

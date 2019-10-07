@@ -12,7 +12,7 @@ function BlogPostPreview (props) {
   return (
     <Link
       className={props.isInList ? styles.inList : styles.inGrid}
-      to={getBlogUrl(props.externalLink, props.slug.current)}
+      to={getBlogUrl(props.disableCaseStudy, props.externalLink, props.slug.current)}
     >
       <div className={styles.leadMediaThumb}>
         {props.mainImage && props.mainImage.asset && (
@@ -33,7 +33,7 @@ function BlogPostPreview (props) {
             <PortableText blocks={props._rawExcerpt} />
           </div>
         )}
-        <div className={styles.previewType}>{previewType(props.externalLink)}</div>
+        <div className={styles.previewType}>{previewType(props.disableCaseStudy)}</div>
       </div>
     </Link>
   )

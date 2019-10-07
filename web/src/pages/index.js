@@ -60,6 +60,7 @@ export const query = graphql`
           slug {
             current
           }
+          disableCaseStudy
           externalLink
         }
       }
