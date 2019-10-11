@@ -54,3 +54,11 @@ export function previewType (disableCaseStudy) {
     return 'Case Study'
   }
 }
+
+export function displayTimeframe (timeframe) {
+  if (timeframe == null) {
+    return 'Ongoing project'
+  } else {
+    return format(timeframe, 'MMMM YYYY')
+  }
+}

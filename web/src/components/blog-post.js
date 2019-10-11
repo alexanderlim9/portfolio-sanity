@@ -1,6 +1,6 @@
 import {format, distanceInWords, differenceInDays} from 'date-fns'
 import React from 'react'
-import {buildImageObj} from '../lib/helpers'
+import {buildImageObj, displayTimeframe} from '../lib/helpers'
 import {imageUrlFor} from '../lib/image-url'
 import PortableText from './portableText'
 import Container from './container'
@@ -9,7 +9,7 @@ import AuthorList from './author-list'
 import styles from './blog-post.module.css'
 
 function BlogPost (props) {
-  const {_rawBody, authors, categories, title, mainImage, publishedAt} = props
+  const {_rawBody, authors, categories, title, mainImage, publishedAt, timeframe} = props
   return (
     <article className={styles.root}>
       {mainImage && mainImage.asset && (
@@ -32,6 +32,7 @@ function BlogPost (props) {
             {_rawBody && <PortableText blocks={_rawBody} />}
           </div>
           <aside className={styles.metaContent}>
+            <div className={styles.timeframe}>{displayTimeframe(timeframe)}</div>
             {authors && <AuthorList items={authors} title='Affiliation' />}
             {categories && (
               <div className={styles.categories}>

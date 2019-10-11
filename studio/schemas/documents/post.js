@@ -40,6 +40,15 @@ export default {
       description: 'This can be used to schedule post for publishing'
     },
     {
+      name: 'timeframe',
+      type: 'datetime',
+      title: 'Timeframe',
+      description: 'When the project took place',
+      options: {
+        dateFormat: 'YYYY-MM'
+      }
+    },
+    {
       name: 'mainImage',
       type: 'mainImage',
       title: 'Main image'
