@@ -25,6 +25,7 @@ export const query = graphql`
       slug {
         current
       }
+      externalLink
       _rawExcerpt(resolveReferences: {maxDepth: 5})
       _rawBody(resolveReferences: {maxDepth: 5})
       authors {
