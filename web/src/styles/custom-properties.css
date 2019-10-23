@@ -8,7 +8,7 @@
   --color-light-gray: #b4bcc7;
   --color-very-light-gray: #e7ebed;
   --color-white: #fff;
-  --color-accent: #156dff;
+  --color-accent: #0241b8;
 
   /* Typography */
   --unit: 18;
@@ -30,12 +30,12 @@
 }
 
 /* LINKS ----------------*/
-a {
+a:link, a:visited, a p {
   color: var(--color-black);
 }
 
-a:visited {
-  color: var(--color-black);
+a:link:hover, a:visited:hover {
+  color: var(--color-accent);
 }
 
 /* CONTACT ----------------*/
