@@ -13,4 +13,8 @@
   @media (--media-min-medium) {
     margin-left: 5%;
   }
+
+  @media (--media-min-extralarge) {
+    max-width: 1100px;
+  }
 }
