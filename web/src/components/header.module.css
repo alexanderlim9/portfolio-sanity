@@ -24,6 +24,10 @@
   @media (--media-min-extralarge) {
     max-width: 1100px;
   }
+
+  @media (--media-min-2extralarge) {
+    margin-left: 10%;
+  }
 }
 
 .branding {
