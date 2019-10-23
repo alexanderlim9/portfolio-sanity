@@ -12,7 +12,7 @@ export const query = graphql`
   query AboutPageQuery {
     sanityAbout(slug: {current: {eq: "about"}}) {
       title
-      _rawBody
+      _rawBody(resolveReferences: {maxDepth: 5})
     }
   }
 `
