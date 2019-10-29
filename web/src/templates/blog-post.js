@@ -17,6 +17,10 @@ export const query = graphql`
         _id
         title
       }
+      tools {
+        _id
+        title
+      }
       mainImage {
         ...SanityImage
         alt

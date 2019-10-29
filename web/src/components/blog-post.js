@@ -10,7 +10,7 @@ import Link from './variable-link'
 import styles from './blog-post.module.css'
 
 function BlogPost (props) {
-  const {_rawBody, authors, categories, title, mainImage, publishedAt, externalLink, timeframe} = props
+  const {_rawBody, authors, categories, tools, title, mainImage, publishedAt, externalLink, timeframe} = props
   return (
     <article className={styles.root}>
       {mainImage && mainImage.asset && (
@@ -42,6 +42,16 @@ function BlogPost (props) {
                 <ul>
                   {categories.map(category => (
                     <li key={category._id}>{category.title}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {tools && (
+              <div className={styles.categories}>
+                <h3 className={styles.categoriesHeadline}>Tools</h3>
+                <ul>
+                  {tools.map(tool => (
+                    <li key={tool._id}>{tool.title}</li>
                   ))}
                 </ul>
               </div>

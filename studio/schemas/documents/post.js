@@ -84,6 +84,19 @@ export default {
       ]
     },
     {
+      name: 'tools',
+      type: 'array',
+      title: 'Tools',
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'tools'
+          }
+        }
+      ]
+    },
+    {
       name: 'body',
       type: 'bodyPortableText',
       title: 'Body'
