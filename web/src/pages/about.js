@@ -35,6 +35,41 @@ const AboutPage = props => {
       <Container>
         <h1 className={responsiveTitle1}>{title}</h1>
         {_rawBody && <PortableText blocks={_rawBody} />}
+        <div className="contact">
+            <ul>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1X82v2loB28Xqyb0WIS2EiOA_NMB39Xf7/view?usp=sharing"
+                  target="_blank"
+                >
+                  Resume
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/alexander-lim/"
+                  target="_blank"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/alexanderlim9" target="_blank">
+                  Github
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/journalims" target="_blank">
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="mailto:lim.a@husky.neu.edu">
+                  Email
+                </a>
+              </li>
+            </ul>
+          </div>
       </Container>
     </Layout>
   )
