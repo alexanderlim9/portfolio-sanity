@@ -127,7 +127,7 @@ const IndexPage = props => {
             <ul>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1X82v2loB28Xqyb0WIS2EiOA_NMB39Xf7/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1DtK-AqBvEWfK9PqL3Nwxq6LCIpaTYODb/view?usp=sharing"
                   target="_blank"
                 >
                   Resume
