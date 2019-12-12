@@ -39,7 +39,7 @@ const AboutPage = props => {
             <ul>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1DtK-AqBvEWfK9PqL3Nwxq6LCIpaTYODb/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1AoZAnBU5tHjJuoePiGHfOY3rPx4v5SP6/view?usp=sharing"
                   target="_blank"
                 >
                   Resume
