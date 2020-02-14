@@ -62,3 +62,9 @@ a:link:hover, a:visited:hover {
 .projects {
   margin: 100px 0px;
 }
+
+.projects h2 {
+  font-size: .9em;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 2px;
+}

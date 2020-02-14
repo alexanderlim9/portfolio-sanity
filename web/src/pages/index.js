@@ -6,6 +6,7 @@ import {
   filterOutDocsPublishedInTheFuture
 } from '../lib/helpers'
 import BlogPostPreviewList from '../components/blog-post-preview-list'
+import BlogPostPreviewGrid from '../components/blog-post-preview-grid'
 import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
@@ -43,7 +44,6 @@ export const query = graphql`
       keywords
     }
     posts: allSanityPost(
-      limit: 5
       sort: { fields: [publishedAt], order: DESC }
       filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
     ) {
@@ -103,21 +103,19 @@ const IndexPage = props => {
         <div className='hero'>
           <h1 className={home_hero1}><b>I'm Alex.</b> I'm a creative developer, designer, and journalist visualizing data and building narratives on the web.</h1>
           <p className={home_hero2}>
-            You can find me exploring social media data this semester with the new{" "}
+            I like trains, typography and pushing the boundaries of traditional prose journalism.
+            Between the {" "}
             <a href="https://camd.northeastern.edu/research-scholarship-creative-practice/co-laboratory-for-data-impact/" target="_blank">
               Co-Lab for Data Impact
-            </a>
-            . Previous homes include{" "}
+            </a>,{" "}
             <a href="https://www.upstatement.com/" target="_blank">
               Upstatement
             </a>,{" "}
-            <a href="https://www.bostonglobe.com/" target="_blank">
-              The Boston Globe
-            </a>{" "}
             and {" "}
             <a href="https://www.twosixlabs.com/" target="_blank">
               Two Six Labs
-            </a>.{" "}
+            </a>,{" "}
+            I've been learning how to bring design, data and code together to tell stories that can't be told with words alone.
             I'm a senior at Northeastern University graduating in May 2020.
           </p>
           <p className={home_hero2}>
@@ -160,13 +158,8 @@ const IndexPage = props => {
           </div>
         </div>
         <div className="projects">
-          {postNodes && (
-            <BlogPostPreviewList
-              title='Featured Projects'
-              nodes={postNodes}
-              browseMoreHref='/projects/'
-            />
-          )}
+          <h2>Featured Projects</h2>
+          {postNodes && postNodes.length > 0 && <BlogPostPreviewGrid nodes={postNodes} />}
         </div>
       </Container>
     </Layout>
