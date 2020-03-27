@@ -1,0 +1,10 @@
+@import './custom-properties.css';
+
+/* LINKS ----------------*/
+a:link, a:visited, a p {
+    color: var(--color-black);
+}
+
+a:link:hover, a:visited:hover {
+    color: var(--color-accent);
+}

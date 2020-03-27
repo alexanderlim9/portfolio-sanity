@@ -1,0 +1,32 @@
+@import './custom-properties.css';
+
+/* CONTACT ----------------*/
+.contact ul {
+    padding: 0;
+  }
+  .contact li {
+      display: inline;
+  }
+  
+  .contact a:before {
+      content: none;
+  }
+  
+  .contact li:after {
+      content: ' / '
+  }
+  
+  .contact li:last-child:after {
+      content: '';
+  }
+  
+  /* PROJECTS ----------------*/
+  .projects {
+    margin: 100px 0px;
+  }
+  
+  .projects h2 {
+    font-size: .9em;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 2px;
+  }

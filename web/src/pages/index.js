@@ -13,6 +13,7 @@ import SEO from '../components/seo'
 import Layout from '../containers/layout'
 
 import {home_hero1, home_hero2} from '../components/typography.module.css'
+import '../styles/home.css'
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
