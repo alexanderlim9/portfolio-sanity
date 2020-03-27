@@ -34,6 +34,11 @@ export default {
       description: 'Link to the live site'
     },
     {
+      name: 'order',
+      type: 'number',
+      title: 'Display Order'
+    },
+    {
       name: 'publishedAt',
       type: 'datetime',
       title: 'Published at',
@@ -104,29 +109,11 @@ export default {
   ],
   orderings: [
     {
-      name: 'publishingDateAsc',
-      title: 'Publishing date new–>old',
+      name: 'order',
+      title: 'Order',
       by: [
         {
-          field: 'publishedAt',
-          direction: 'asc'
-        },
-        {
-          field: 'title',
-          direction: 'asc'
-        }
-      ]
-    },
-    {
-      name: 'publishingDateDesc',
-      title: 'Publishing date old->new',
-      by: [
-        {
-          field: 'publishedAt',
-          direction: 'desc'
-        },
-        {
-          field: 'title',
+          field: 'order',
           direction: 'asc'
         }
       ]
