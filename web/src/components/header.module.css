@@ -8,8 +8,8 @@
 
 .wrapper {
   box-sizing: border-box;
-  margin: 0 0;
-  max-width: 1060px;
+  margin: 0 auto;
+  max-width: 1200px;
   padding: .5em;
   display: flex;
 
@@ -18,15 +18,15 @@
   }
 
   @media (--media-min-medium) {
-    margin-left: 5%;
+    /* margin-left: 5%; */
   }
 
   @media (--media-min-extralarge) {
-    max-width: 1100px;
+    /* max-width: 1100px; */
   }
 
   @media (--media-min-2extralarge) {
-    margin-left: 10%;
+    /* margin-left: 10%; */
   }
 }
 
