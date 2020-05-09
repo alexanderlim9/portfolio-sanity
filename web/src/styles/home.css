@@ -2,23 +2,75 @@
 @import "../styles/custom-media.css";
 
 /* CONTACT ----------------*/
-.contact ul {
+.social ul {
   padding: 0;
+  margin-bottom: 0;
 }
-.contact li {
+
+.social li {
   display: inline;
+  padding-left: 3px;
+  padding-right: 1em;
+
+  @nest & a {
+    color: var(--color-accent);
+  }
+
+  @nest & a:hover {
+    color: lightsteelblue;
+  }
 }
 
-.contact a:before {
-  content: none;
+.cta {
+  font-size: 20px;
+  grid-column: 1 / span 12;
+  margin-bottom: 1em;
 }
 
-.contact li:after {
-  content: " / ";
+.cta > button > a {
+  font-family: "noort";
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
 }
 
-.contact li:last-child:after {
-  content: "";
+.cta > button {
+  border: 2px solid var(--color-accent);
+  border-radius: 3px;
+  width: calc(50% - .75em);
+  height: 36px;
+  /* padding: 0.5em; */
+}
+
+.cta > button:first-child {
+  background-color: var(--color-accent);
+  margin-right: 1.5em;
+
+  @nest & a {
+    color: white;
+  }
+}
+
+.cta > button:first-child:hover {
+  border-color:lightsteelblue;
+  background-color: lightsteelblue;
+}
+
+.cta > button:nth-child(2) {
+  background-color: white;
+
+  @nest & a {
+    color: var(--color-accent);
+  }
+}
+
+.cta > button:nth-child(2):hover {
+  border-color:lightsteelblue;
+  background-color: lightsteelblue;
+
+  @nest & a {
+    color: white;
+  }
 }
 
 /* PROJECTS ----------------*/
@@ -64,6 +116,7 @@
   column-count: 1;
   column-gap: 1.5em;
   margin-top: 0;
+  font-size: 20px;
 }
 
 .hero-sub {
@@ -71,15 +124,6 @@
   grid-template-columns: repeat(12, 1fr);
   column-gap: 1.5em;
   grid-column: 1 / 13;
-}
-
-.contact {
-  grid-column: 1 / 13;
-  margin-bottom: 2em;
-}
-
-.contact ul {
-  margin: 0;
 }
 
 .currently {
@@ -103,9 +147,11 @@
   .intro {
     font-size: 2.2em;
   }
-
-  .contact {
-    grid-column: 1 / 5;
+  
+  .cta {
+    font-size: 20px;
+    grid-column: 1 / span 8;
+    margin-bottom: 2em;
   }
 
   .currently {
@@ -119,16 +165,13 @@
 
 @media (--media-min-large) {
   .intro {
-    font-size: 2.4em;
+    font-size: 2.5em;
   }
 
-  .body {
-    column-count: 2;
-    column-gap: 1.5em;
-  }
-
-  .contact {
-    grid-column: 1 / 9;
+  .cta {
+    font-size: 20px;
+    grid-column: 1 / span 8;
+    margin-bottom: 2em;
   }
 
   .currently {
@@ -137,6 +180,19 @@
 
   .previously {
     grid-column: 11 / 13;
+  }
+}
+
+@media (min-width: 1400px) {
+  .body {
+    column-count: 2;
+    column-gap: 1.5em;
+  }  
+
+  .cta {
+    font-size: 20px;
+    grid-column: 1 / span 4;
+    margin-bottom: 2em;
   }
 }
 
