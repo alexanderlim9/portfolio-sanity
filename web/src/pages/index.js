@@ -11,6 +11,9 @@ import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 
+import {faTwitter, faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+
 import '../styles/home.css'
 
 export const query = graphql`
@@ -118,36 +121,39 @@ const IndexPage = props => {
           </div>
         </div>
         <div className='hero-sub'>
-          <div className='contact'>
+          <div className='cta'>
+            <button>
+              <a href='mailto:lim.a@northeastern.edu'>Get in touch</a>
+            </button>
+            <button>
+              <a
+                href='https://drive.google.com/file/d/1PKY7FUMfgsXd9ap8N_pCs1h9SzGwAAhj/view?usp=sharing'
+                target='_blank'
+              >
+                View resume
+              </a>
+            </button>
+            <div className='social'>
             <ul>
               <li>
-                <a
-                  href='https://drive.google.com/file/d/1PKY7FUMfgsXd9ap8N_pCs1h9SzGwAAhj/view?usp=sharing'
-                  target='_blank'
-                >
-                  Resume
+                <a href='https://twitter.com/journalims' target='_blank'>
+                  <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </li>
               <li>
                 <a href='https://www.linkedin.com/in/alexander-lim/' target='_blank'>
-                  LinkedIn
+                  <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
               </li>
               <li>
                 <a href='https://github.com/alexanderlim9' target='_blank'>
-                  Github
+                  <FontAwesomeIcon icon={faGithub} />
                 </a>
-              </li>
-              <li>
-                <a href='https://twitter.com/journalims' target='_blank'>
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a href='mailto:lim.a@husky.neu.edu'>Email</a>
               </li>
             </ul>
           </div>
+          </div>
+         
           <div className='currently'>
             <b>Currently</b> <br />
             {homeNodes.currently}
