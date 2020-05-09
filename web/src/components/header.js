@@ -17,14 +17,15 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
       </button>
 
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
-        <ul>
+        <span>New site coming soon👷‍♂️</span>
+        {/* <ul>
           <li>
             <Link to='/about/'>About</Link>
           </li>
           <li>
             <Link to='/projects/'>Projects</Link>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </div>
   </div>
