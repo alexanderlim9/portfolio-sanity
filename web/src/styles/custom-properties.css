@@ -1,5 +1,5 @@
 :root {
-  --font-family-serif: 'ff-tisa-web-pro', BlinkMacSystemFont, serif;
+  --font-family-serif: "noort", BlinkMacSystemFont, serif;
   --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif;
 
   --color-black: #222222;
@@ -8,7 +8,7 @@
   --color-light-gray: #b4bcc7;
   --color-very-light-gray: #e7ebed;
   --color-white: #fff;
-  --color-accent: #0241b8;
+  --color-accent: #ff520e;
 
   /* Typography */
   --unit: 18;

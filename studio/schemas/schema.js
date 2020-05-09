@@ -11,6 +11,7 @@ import tools from './documents/tools'
 import post from './documents/post'
 import siteSettings from './documents/siteSettings'
 import about from './documents/about'
+import home from './documents/home'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
@@ -34,6 +35,7 @@ export default createSchema({
     tools,
     author,
     about,
+    home,
     mainImage,
     authorReference,
     bodyPortableText,

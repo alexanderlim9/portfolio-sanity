@@ -1,32 +1,153 @@
-@import './custom-properties.css';
+@import "./custom-properties.css";
+@import "../styles/custom-media.css";
 
 /* CONTACT ----------------*/
 .contact ul {
-    padding: 0;
+  padding: 0;
+}
+.contact li {
+  display: inline;
+}
+
+.contact a:before {
+  content: none;
+}
+
+.contact li:after {
+  content: " / ";
+}
+
+.contact li:last-child:after {
+  content: "";
+}
+
+/* PROJECTS ----------------*/
+.projects {
+  margin: 100px 0px;
+}
+
+.projects h2 {
+  font-size: 1em;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 2px;
+}
+
+/* NEW STYLES ----------------*/
+.hero {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 1.5em;
+  margin-bottom: 2em;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  column-gap: 1.5em;
+  grid-column: 1 / 13;
+  margin-bottom: 2em;
+}
+
+.heroRight {
+  grid-column: 1 / 13;
+}
+
+.intro-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body {
+  column-count: 1;
+  column-gap: 1.5em;
+  margin-top: 0;
+}
+
+.hero-sub {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 1.5em;
+  grid-column: 1 / 13;
+}
+
+.contact {
+  grid-column: 1 / 13;
+  margin-bottom: 2em;
+}
+
+.contact ul {
+  margin: 0;
+}
+
+.currently {
+  grid-column: 1 / 7;
+}
+
+.previously {
+  grid-column: 7 / 13;
+}
+
+@media (--media-min-medium) {
+  .heroLeft {
+    column-gap: 1.5em;
+    grid-column: 1 / 9;
   }
-  .contact li {
-      display: inline;
+
+  .heroRight {
+    grid-column: 9 / 13;
   }
-  
-  .contact a:before {
-      content: none;
+
+  .intro {
+    font-size: 2.2em;
   }
-  
-  .contact li:after {
-      content: ' / '
+
+  .contact {
+    grid-column: 1 / 5;
   }
-  
-  .contact li:last-child:after {
-      content: '';
+
+  .currently {
+    grid-column: 5 / 9;
   }
-  
-  /* PROJECTS ----------------*/
-  .projects {
-    margin: 100px 0px;
+
+  .previously {
+    grid-column: 9 / 13;
   }
-  
-  .projects h2 {
-    font-size: .9em;
-    font-variant-caps: all-small-caps;
-    letter-spacing: 2px;
+}
+
+@media (--media-min-large) {
+  .intro {
+    font-size: 2.4em;
   }
+
+  .body {
+    column-count: 2;
+    column-gap: 1.5em;
+  }
+
+  .contact {
+    grid-column: 1 / 9;
+  }
+
+  .currently {
+    grid-column: 9 / 11;
+  }
+
+  .previously {
+    grid-column: 11 / 13;
+  }
+}
+
+@media (--media-min-extralarge) {
+  .intro {
+    font-size: 2.7em;
+  }
+
+  .hero,
+  .heroLeft,
+  .hero-sub {
+    column-gap: 1.5em;
+  }
+}
