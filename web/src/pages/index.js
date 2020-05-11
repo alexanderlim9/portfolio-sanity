@@ -162,7 +162,9 @@ const IndexPage = props => {
             <b>Previously</b> <br />
             Co-Lab for Data Impact <br />
             Upstatement <br />
-            Two Six Labs
+            Two Six Labs <br />
+            Scout Studio <br />
+            Liberty Mutual
             {/* {homeNodes.previously} */}
           </div>
         </div>
