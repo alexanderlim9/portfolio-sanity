@@ -127,7 +127,7 @@ const IndexPage = props => {
             </button>
             <button>
               <a
-                href='https://drive.google.com/file/d/15LtF1crw0zjxgpjuRataHSfvP4w9q6L6/view?usp=sharing'
+                href='https://drive.google.com/file/d/162gMyfNwhVtobQYZltWFZCI3d8pRzeGP/view?usp=sharing'
                 target='_blank'
               >
                 View resume
