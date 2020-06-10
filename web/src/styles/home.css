@@ -136,6 +136,11 @@
 
 .previously {
   grid-column: 7 / 13;
+
+  @nest & a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 @media (--media-min-medium) {

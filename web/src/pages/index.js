@@ -160,11 +160,11 @@ const IndexPage = props => {
           </div>
           <div className='previously'>
             <b>Previously</b> <br />
-            Co-Lab for Data Impact <br />
-            Upstatement <br />
-            Two Six Labs <br />
-            Scout Studio <br />
-            Liberty Mutual
+            <a href="https://camd.northeastern.edu/research-scholarship-creative-practice/co-laboratory-for-data-impact/#:~:text=Co%2DLab%20for%20Data%20Impact,diversity%2C%20transparency%2C%20and%20sustainability." target="_blank">Co-Lab for Data Impact</a> <br />
+            <a href="https://www.upstatement.com/" target="_blank">Upstatement</a> <br />
+            <a href="https://www.twosixlabs.com/" target="_blank">Two Six Labs</a> <br />
+            <a href="https://web.northeastern.edu/scout/" target="_blank">Scout Studio</a> <br />
+            <a href="https://www.libertymutual.com/" target="_blank">Liberty Mutual</a>
             {/* {homeNodes.previously} */}
           </div>
         </div>
