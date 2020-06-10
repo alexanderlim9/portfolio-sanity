@@ -112,11 +112,15 @@
   object-fit: cover;
 }
 
+.intro {
+  font-size: 1.5em;
+}
+
 .body {
   column-count: 1;
   column-gap: 1.5em;
   margin-top: 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .hero-sub {
@@ -145,7 +149,11 @@
   }
 
   .intro {
-    font-size: 2.2em;
+    font-size: 1.8em;
+  }
+
+  .body {
+    font-size: 22px;
   }
   
   .cta {
@@ -164,10 +172,6 @@
 }
 
 @media (--media-min-large) {
-  .intro {
-    font-size: 2.5em;
-  }
-
   .cta {
     font-size: 20px;
     grid-column: 1 / span 8;
@@ -184,10 +188,9 @@
 }
 
 @media (min-width: 1400px) {
-  .body {
-    column-count: 2;
-    column-gap: 1.5em;
-  }  
+  .intro {
+    font-size: 2.2em;
+  }
 
   .cta {
     font-size: 20px;
@@ -198,7 +201,7 @@
 
 @media (--media-min-extralarge) {
   .intro {
-    font-size: 2.7em;
+    font-size: 2.4em;
   }
 
   .hero,
