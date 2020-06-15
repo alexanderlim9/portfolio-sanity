@@ -27,11 +27,14 @@
 }
 
 .grid {
+  display: flex;
+  flex-direction: column-reverse;
+
   @media (--media-min-medium) {
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 2em;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 3fr;
     max-width: 1200px;
     margin: 0 auto;
   }

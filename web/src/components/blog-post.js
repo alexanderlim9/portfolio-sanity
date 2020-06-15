@@ -28,10 +28,6 @@ function BlogPost (props) {
       )}
       <Container>
         <div className={styles.grid}>
-          <div className={styles.mainContent}>
-            <h1 className={styles.title}>{title}</h1>
-            {_rawBody && <PortableText blocks={_rawBody} />}
-          </div>
           <aside className={styles.metaContent}>
             {externalLink && <Link to={externalLink}><h4>View live site</h4></Link>}
             <div className={styles.timeframe}>{displayTimeframe(timeframe)}</div>
@@ -57,6 +53,10 @@ function BlogPost (props) {
               </div>
             )}
           </aside>
+          <div className={styles.mainContent}>
+            <h1 className={styles.title}>{title}</h1>
+            {_rawBody && <PortableText blocks={_rawBody} />}
+          </div>
         </div>
       </Container>
     </article>
