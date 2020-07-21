@@ -7,6 +7,7 @@ import styles from './layout.module.css'
 
 const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle}) => (
   <>
+    <div className={styles.banner}><p>⚠️ This is an archived version of my portfolio. Visit my current site <a href="https://alexanderlim.io/">here</a>. ⚠️</p></div>
     <Header siteTitle={siteTitle} onHideNav={onHideNav} onShowNav={onShowNav} showNav={showNav} />
     <div className={styles.content}>{children}</div>
     <footer className={styles.footer}>

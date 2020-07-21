@@ -1,6 +1,23 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
 
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 f;
+  background-color: black;
+}
+
+.banner > p {
+  margin: .25em .5em;
+  color: white;
+
+  @nest & a {
+    color: white;
+  }
+}
+
 .content {
   background: var(--color-white);
   min-height: calc(100% - 73px - 120px);
